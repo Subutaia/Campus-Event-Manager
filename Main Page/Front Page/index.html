@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campus Event Management System">
+    <title>Campus Event Manager</title>
+    <link rel="stylesheet" href="../Styles/mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-brand">
+                    <span>Campus Events</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#login" class="btn btn-outline">Login</a>
+                    <a href="#register" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover Campus Events</h1>
+                <p class="hero-subtitle">
+                    Connect, engage, and participate in campus activities. 
+                </p>
+                <div class="hero-actions">
+                    <a href="#events" class="btn btn-primary btn-lg">Browse Events</a>
+                    <a href="#create" class="btn btn-outline btn-lg">Create Event</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- search & filter -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-wrapper">
+                <div class="filter-options">
+                    <select class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="technology">Technology</option>
+                        <option value="cultural">Cultural</option>
+                        <option value="career">Career</option>
+                    </select>
+                    <select class="filter-select">
+                        <option value="">All Dates</option>
+                        <option value="today">Today</option>
+                        <option value="this-week">This Week</option>
+                        <option value="this-month">This Month</option>
+                    </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- featured events -->
+    <section class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Upcoming Events</h2>
+                <a href="#all-events" class="link-primary">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="events-grid">
+                <!-- event card 1 -->
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Event image">
+                        <span class="event-badge badge-success">Approved</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">
+                                <i class="far fa-calendar"></i> Mar 15, 2026
+                            </span>
+                            <span class="event-time">
+                                <i class="far fa-clock"></i> 2:00 PM
+                            </span>
+                        </div>
+                        <h3 class="event-title">Tech Innovation Summit</h3>
+                        <p class="event-description">
+                            Join us for an inspiring day of technology talks and networking opportunities.
+                        </p>
+                        <div class="event-footer">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Student Center, Room 301</span>
+                            </div>
+                            <div class="event-attendees">
+                                <i class="fas fa-users"></i>
+                                <span>45 attending</span>
+                            </div>
+                        </div>
+                        <div class="event-tags">
+                            <span class="tag">Technology</span>
+                            <span class="tag">Networking</span>
+                        </div>
+                        <a href="#event-1" class="btn btn-primary btn-block">View Details</a>
+                    </div>
+                </article>
+
+                <!-- event card 2 -->
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Event image">
+                        <span class="event-badge badge-warning">Pending</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">
+                                <i class="far fa-calendar"></i> Mar 18, 2026
+                            </span>
+                            <span class="event-time">
+                                <i class="far fa-clock"></i> 6:00 PM
+                            </span>
+                        </div>
+                        <h3 class="event-title">Cultural Night Festival</h3>
+                        <p class="event-description">
+                            Celebrate diversity with food, music, and performances from around the world.
+                        </p>
+                        <div class="event-footer">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Main Auditorium</span>
+                            </div>
+                            <div class="event-attendees">
+                                <i class="fas fa-users"></i>
+                                <span>120 attending</span>
+                            </div>
+                        </div>
+                        <div class="event-tags">
+                            <span class="tag">Cultural</span>
+                            <span class="tag">Entertainment</span>
+                        </div>
+                        <a href="#event-2" class="btn btn-primary btn-block">View Details</a>
+                    </div>
+                </article>
+
+                <!-- event card 3 -->
+                <article class="event-card">
+                    <div class="event-image">
+                        <img src="https://via.placeholder.com/400x250" alt="Event image">
+                        <span class="event-badge badge-success">Approved</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-meta">
+                            <span class="event-date">
+                                <i class="far fa-calendar"></i> Mar 20, 2026
+                            </span>
+                            <span class="event-time">
+                                <i class="far fa-clock"></i> 10:00 AM
+                            </span>
+                        </div>
+                        <h3 class="event-title">Career Fair 2026</h3>
+                        <p class="event-description">
+                            Meet with top employers and explore internship and career opportunities.
+                        </p>
+                        <div class="event-footer">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Recreation Center</span>
+                            </div>
+                            <div class="event-attendees">
+                                <i class="fas fa-users"></i>
+                                <span>200 attending</span>
+                            </div>
+                        </div>
+                        <div class="event-tags">
+                            <span class="tag">Career</span>
+                            <span class="tag">Professional</span>
+                        </div>
+                        <a href="#event-3" class="btn btn-primary btn-block">View Details</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
